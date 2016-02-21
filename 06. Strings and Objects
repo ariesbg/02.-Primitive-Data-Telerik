@@ -1,0 +1,25 @@
+/*Problem 6. Strings and Objects
+
+    Declare two string variables and assign them with Hello and World.
+    Declare an object variable and assign it with the concatenation of the first two variables (mind adding an interval between).
+    Declare a third string variable and initialize it with the value of the object variable (you should perform type casting).
+*/
+
+
+using System;
+
+class StringAndObjects
+{
+    static void Main(string[] args)
+    {
+        string firstStr = "Hello";
+        string secondStr = "World";
+        object stringConcatenation = firstStr +" " + secondStr;
+        Console.WriteLine("The concatination between the strings is: {0} {1}", firstStr,secondStr);
+
+        string thirdStr = (string)stringConcatenation;
+        Console.WriteLine(thirdStr);
+
+    }
+}
+
