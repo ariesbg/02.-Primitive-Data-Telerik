@@ -1,0 +1,26 @@
+/*Problem 11. Bank Account Data
+
+    A bank account has a holder name (first name, middle name and last name), available amount of money (balance), bank name, IBAN,
+ * 3 credit card numbers associated with the account.
+    Declare the variables needed to keep the information for a single bank account using the appropriate data types and descriptive names.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string firstName = "Ivan";
+        string middleName = "Pavlov";
+        string lastName = "Ivanov";
+        double balance = 1234.56;
+        string bankName = "Volksbank";
+        string iban = "DE121234512345678900";
+        string firstCard = "0000111122223333";
+        string secondCard = "1111222233334444";
+        string thirdCard = "2222333344445555";
+        Console.WriteLine("Your Bank Account Data is: \nName: {0} {1} {2} \nBalance: {3} \nBank Name: {4} \nIBAN: {5} \nFirst card: {6} \nSecond card: {7} \nThird card: {8}", firstName, middleName, lastName, balance, bankName, iban, firstCard, secondCard, thirdCard);
+    }
+}
+
